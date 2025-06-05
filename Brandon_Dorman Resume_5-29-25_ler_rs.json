@@ -1,0 +1,47 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://schema.hropenstandards.org/4.5RC/recruiting/json/ler-rs/ProvisionalVerifiableCredentialResumeType.json"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "ProvisionalVerifiableCredentialResume"
+  ],
+  "id": "urn:uuid:ae9e5cc5-d4b8-4697-8f1a-32b5557cf1b2",
+  "credentialSchema": {
+    "id": "http://schema.hropenstandards.org/4.5RC/recruiting/json/ler-rs/ProvisionalVerifiableCredentialResumeType.json",
+    "type": "JsonSchemaValidator2018"
+  },
+  "issuer": {
+    "type": "Organization",
+    "id": "urn:uuid:3af41ef8-2747-4fae-8bac-00ea477510cd",
+    "name": "Self-issued résumé builder"
+  },
+  "issuanceDate": "2025-06-05T01:26:02+00:00",
+  "credentialSubject": {
+    "id": "urn:uuid:f1734969-f5bb-4cc6-9ac4-73db6cd8abaf",
+    "type": "ResumeSubject",
+    "personalData": {
+      "givenName": "Unknown",
+      "familyName": "Unknown",
+      "email": "Unknown",
+      "phone": "Unknown"
+    },
+    "positionHistory": [
+      {
+        "id": "urn:uuid:47af8545-5611-48d7-9c9a-935b0e4914ff",
+        "type": "Position",
+        "jobTitle": "Unknown",
+        "organization": "Unknown",
+        "description": "Unknown"
+      }
+    ]
+  },
+  "proof": {
+    "type": "JsonWebSignature2020",
+    "created": "2025-06-05T01:26:02+00:00",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "urn:uuid:7ebb0d94-44df-460e-a7d3-d317203cd0db",
+    "jws": "dummy"
+  }
+}
