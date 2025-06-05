@@ -1,0 +1,48 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "http://schema.hropenstandards.org/4.5RC/recruiting/json/ler-rs/ProvisionalVerifiableCredentialResumeType.json"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "ProvisionalVerifiableCredentialResume"
+  ],
+  "id": "urn:uuid:21156c1c-8500-4fad-a5aa-2c656d7065c3",
+  "credentialSchema": {
+    "id": "http://schema.hropenstandards.org/4.5RC/recruiting/json/ler-rs/ProvisionalVerifiableCredentialResumeType.json",
+    "type": "JsonSchemaValidator2018"
+  },
+  "issuer": {
+    "type": "Organization",
+    "id": "urn:uuid:07028242-55b7-4f0d-b9d5-10a0c696e901",
+    "name": "Self-issued résumé builder"
+  },
+  "issuanceDate": "2025-06-05T01:32:16+00:00",
+  "credentialSubject": {
+    "id": "urn:uuid:4329012d-a78b-492f-b962-ac708b07fece",
+    "type": "ResumeSubject",
+    "personalData": {
+      "givenName": "Veri",
+      "familyName": "Fyme",
+      "email": "Unknown",
+      "phone": "Unknown"
+    },
+    "positionHistory": [
+      {
+        "id": "urn:uuid:3d24597b-e9dd-4dba-938b-991e44aec274",
+        "type": "Position",
+        "jobTitle": "Unknown",
+        "organization": "Unknown",
+        "description": "Unknown"
+      }
+    ]
+  },
+  "proof": {
+    "type": "JsonWebSignature2020",
+    "created": "2025-06-05T01:32:16+00:00",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "urn:uuid:6cc5a007-abf1-41f9-bd76-a3e4f0ed2c1b",
+    "jws": "dummy"
+  },
+  "name": "Veri Fyme – Resume"
+}
